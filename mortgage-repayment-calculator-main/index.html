@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-form">
+            <h3>Mortgage Calculator</h3>
+            <label for="mortgage-amount">Mortgage Amount (£)</label>
+            <input id="mortgage-amount" type="number" placeholder="300,000" min="1">
+            
+            <label for="mortgage-term">Mortgage Term (years)</label>
+            <input id="mortgage-term" type="number" placeholder="25" min="1">
+            
+            <label for="interest-rate">Interest Rate (%)</label>
+            <input id="interest-rate" type="number" placeholder="5.25" min="0" step="0.01">
+            
+            <label>Mortgage Type</label>
+            <div>
+                <input type="radio" name="mortgage-type" id="repayment" checked> Repayment
+                <input type="radio" name="mortgage-type" id="interest-only"> Interest Only
+            </div>
+
+            <button id="calculate-button" class="calculate-button">Calculate Repayments</button>
+        </div>
+
+        <div class="calculator-results">
+            <h3>Your Results</h3>
+            <div id="monthly-repayment">£0.00</div>
+            <div id="total-repayment">Total you'll repay over the term<br>£0.00</div>
+        </div>
+    </div>
+    
+    <!-- Ensure the script is placed at the end of the body -->
+    <script src="main.js"></script>
+</body>
+</html>

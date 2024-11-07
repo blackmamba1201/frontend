@@ -1,0 +1,89 @@
+/* Container */
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Left panel (form) */
+.calculator-form {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-form h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.calculator-form label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.calculator-form input[type="text"],
+.calculator-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calculator-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.calculate-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4e157;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculate-button:hover {
+    background-color: #c0ca33;
+}
+
+/* Right panel (results) */
+.calculator-results {
+    width: 35%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calculator-results h3 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.calculator-results .monthly-repayment {
+    font-size: 2em;
+    font-weight: bold;
+    color: #d4e157;
+}
+
+.calculator-results .total-repayment {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #bbb;
+}
